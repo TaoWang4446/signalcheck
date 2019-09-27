@@ -1,0 +1,54 @@
+spring:
+  datasource:
+    driverClassName: oracle.jdbc.driver.OracleDriver
+    enabled: true
+    url: jdbc:oracle:thin:@20.0.51.254:1521/racdb
+    username: ehl_sdyw
+    password: ehl1234
+
+# MyBatis
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: com.ehl.signalcheck.entity
+  mapper-locations: classpath:mapper/**/*.xml
+
+
+
+
+  jpa:
+    show-sql: true
+
+calculateserver:
+  serverip: 20.0.51.248
+  serverport: 8000
+  clientip: 20.0.51.248
+  clientport: 6003
+
+oracle:
+  oracleip: 20.0.51.254
+  oracleport: 1521
+  oraclebasename: racdb
+  username: ehl_sdyw
+  password: ehl1234
+
+thread:
+  delaytime: 1
+  period: 300
+  quantity: 50
+  mode: 2
+
+trafficpnum:
+  num: 1
+
+trafficpoint1:
+  devnum: 1
+  tpid: 410311000001
+
+dev1-1:
+  factype: 03
+  devid: 4103110000010800001
+  devtype: 08
+  devip: 10.150.39.222
+  devport: 8000
+  dusername: admin
+  dpassword: chenglong1
