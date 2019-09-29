@@ -19,4 +19,6 @@ public interface DevInfoService {
      * @return
      */
     List<DevInfo> findDevInfoByType(String devType);
+
+
 }

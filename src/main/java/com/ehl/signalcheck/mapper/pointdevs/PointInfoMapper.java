@@ -7,5 +7,9 @@ import java.util.List;
 @Mapper
 public interface PointInfoMapper {
 
+    /**
+     * 查询所有的点位
+     * @return
+     */
     List<String> getPoindCode();
 }

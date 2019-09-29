@@ -18,6 +18,10 @@ mybatis:
   jpa:
     show-sql: true
 
+jobs:
+  fixedDelay: 5000
+  cron: 0/5 * *  * * ?
+
 calculateserver:
   serverip: 20.0.51.248
   serverport: 8000
@@ -52,3 +56,5 @@ dev1-1:
   devport: 8000
   dusername: admin
   dpassword: chenglong1
+
+

@@ -10,10 +10,10 @@ public class DevsStatus {
     private String devid;
 
     //设备错误
-    @JsonProperty("devfault_err")
-    private int devfaultErr;
+    @JsonProperty("devfaultErr")
+    private int devfault_err;
 
     //网络错误
-    @JsonProperty("network_err")
-    private int networkErr;
+    @JsonProperty("networkErr")
+    private int network_err;
 }

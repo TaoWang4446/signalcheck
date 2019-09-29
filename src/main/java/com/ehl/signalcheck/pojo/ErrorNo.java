@@ -8,6 +8,7 @@ package com.ehl.signalcheck.pojo;
 public class ErrorNo {
 	// dev fault error no
 	public final static int HK_DEV_TYPE = 1;         // 海康的设备
+	public final static int ERROR_NO = 0;
 	// 海康机柜
 	public final static int CABINET_TEMP_ERR = 101;  // 机柜温度异常
 	public final static int CABINET_HIM_ERR = 102;   // 机柜湿度异常
@@ -70,10 +71,10 @@ public class ErrorNo {
 	public final static int DEV_OFF_ERR = 2001;      // 设备离线
 
 	// net fault error no
-	public final static int NET_OUT_ERR = 2101; // 网络故障
+	public final static int NET_OUT_ERR = 2101; // 网络故障(ping不通）
 	public final static int SDK_ERR = 2102; // SDK调用失败
 	public final static int REAL_PLAY_ERR = 2103; // 视频流故障
-	public final static int REJECTION_CONN = 2104; // 拒绝连接
+	public final static int REJECTION_CONN = 2104; // 拒绝连接（服务拒绝连接）
 	public final static int DEV_SERVICE_ERROR = 2105; // 设备服务异常
 	// other error no
 	public final static int EDEV_NO_AIR_ERR = 2201; // 总空开离线

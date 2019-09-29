@@ -5,7 +5,11 @@ import com.ehl.signalcheck.dao.DevpointInfoDao;
 import com.ehl.signalcheck.entity.DevInfo;
 import com.ehl.signalcheck.service.DevInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
@@ -17,6 +21,8 @@ public class DevInfoServiceImpl implements DevInfoService {
 
     @Autowired
     private DevpointInfoDao devpointInfoDao;
+
+
 
 
 
@@ -34,4 +40,6 @@ public class DevInfoServiceImpl implements DevInfoService {
     public List<DevInfo> findDevInfoByType(String devType) {
         return devInfoDao.findDevInfoByType(devType);
     }
+
+
 }

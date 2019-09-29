@@ -12,11 +12,11 @@ public class Message {
     private String posid;
 
     @JsonProperty("occur_time")
-    private String occurTime;
+    private String occur_time;
 
     private String msgtype;
 
     @JsonProperty("devs_status")
-    private DevsStatus devsStatus;
+    private DevsStatus devs_status;
 
 }
